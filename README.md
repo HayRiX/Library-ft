@@ -16,35 +16,35 @@
 This project uses a `Makefile` to compile the source code into a static library archive (`libft.a`).
 
 - Clone the repository and navigate to the directory:
-+++bash
+```bash
 git clone <repository_url> library-ft
 cd library-ft
-+++
+```
 
 - Compile the standard mandatory functions:
-+++bash
+```bash
 make
-+++
+```
 
 - Compile the bonus functions (linked lists) along with the mandatory ones:
-+++bash
+```bash
 make bonus
-+++
+```
 
 - Clean up object files (`.o`):
-+++bash
+```bash
 make clean
-+++
+```
 
 - Clean up object files and the `libft.a` binary:
-+++bash
+```bash
 make fclean
-+++
+```
 
 - Recompile everything from scratch:
-+++bash
+```bash
 make re
-+++
+```
 
 ## Project Structure & Functions
 The library is divided into three main sections based on the Makefile:
@@ -72,7 +72,7 @@ A complete API to create and manipulate linked lists using the custom `t_list` s
 After compiling `libft.a`, you can include the header in your C files and compile your project with the library.
 
 1. Include the header in your `.c` file:
-+++c
+```c
 #include "libft.h"
 
 int main(void)
@@ -87,12 +87,12 @@ int main(void)
     }
     return (0);
 }
-+++
+```
 
 2. Compile your program with the library:
-+++bash
+```bash
 cc -Wall -Wextra -Werror my_program.c -L. -lft -o my_program
-+++
+```
 *(Note: `-L.` tells the compiler to look for libraries in the current directory, and `-lft` links the `libft.a` file).*
 
 ## Specific tools used
